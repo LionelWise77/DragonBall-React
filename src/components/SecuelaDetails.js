@@ -15,7 +15,7 @@ export default function SecuelaDetail() {
   const [secuela, setSecuela] = useState(null);
   const [verMiniHistoria, setVerMiniHistoria] = useState(false);
   const { t, i18n } = useTranslation();
-  const lang = i18n.language.split("-")[0];
+  const lang = i18n.language.slice(0, 2);
 
   useEffect(() => {
     axios
