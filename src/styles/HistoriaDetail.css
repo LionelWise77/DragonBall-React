@@ -1,0 +1,121 @@
+.historia-detail {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  background: #111;
+}
+
+.historia-fondo {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.historia-texto {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+}
+
+.toriyama-gallery {
+  margin-top: 40px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 250px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* src/styles/HistoriaDetail.css */
+.historia-detail-container {
+  background-image: url("../assets/history.webp"); /* fondo homenaje */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.historia-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+.historia-title {
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 6px #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.historia-content {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.homenaje-subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffdd57;
+  font-family: "Bangers", cursive;
+}
+
+.historia-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.viñeta {
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #facc15;
+  box-shadow: 0 0 10px rgba(255, 166, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.viñeta img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.viñeta:hover {
+  transform: scale(1.05);
+}
+
+.loading-text {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.4rem;
+}

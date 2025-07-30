@@ -1,0 +1,71 @@
+.sequel-section {
+  padding: 3rem 1rem;
+  background-color: #fffef5;
+}
+
+.sequel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.secuela-card {
+  background: linear-gradient(to bottom, #fff8e7, #ffe0b3);
+  border: 3px solid #ff9100;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.secuela-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.secuela-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 2px solid #ff6b00;
+}
+
+.secuela-card h3 {
+  font-family: "Bangers", cursive;
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.secuela-card p {
+  font-size: 0.95rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+.ver-mas-btn {
+  margin-top: 1rem;
+  background-color: #ff6b00;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 12px;
+  font-family: "Bangers", cursive;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.ver-mas-btn:hover {
+  background-color: #e25600;
+  transform: scale(1.05);
+}

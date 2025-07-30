@@ -1,0 +1,102 @@
+.historia-container {
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+  background-image: url("../assets/history.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.historia-content {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: inline-block;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+  animation: fadeInUp 1s ease-out;
+}
+
+.historia-container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  font-family: "Bangers", cursive;
+  color: #facc15;
+  text-shadow: 3px 3px 6px #000;
+  border: 4px double #facc15;
+  padding: 10px 30px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.4);
+}
+
+.historia-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.secuelas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.secuela-card {
+  text-decoration: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 15px;
+  border-radius: 14px;
+  width: 220px;
+  box-shadow: 0 6px 18px rgba(255, 153, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secuela-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5);
+}
+
+.secuela-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* 🔁 RESPONSIVE */
+@media (max-width: 768px) {
+  .historia-container h1 {
+    font-size: 2.4rem;
+    padding: 8px 20px;
+  }
+
+  .historia-content {
+    padding: 25px 20px;
+  }
+
+  .secuela-card {
+    width: 90%;
+  }
+}
